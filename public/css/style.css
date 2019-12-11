@@ -1,0 +1,267 @@
+/* body{
+    background-image: linear-gradient(to right,#dcf8f3,#90ebe6);
+
+} */
+
+body{
+    background-image: linear-gradient(to right,#ffe1cb,#ffd1b0);
+
+}
+
+/* .jumbotron {
+    background-image: linear-gradient(to right,#90ebe6,#489e9a);
+} */
+
+.jumbotron {
+    background-image: linear-gradient(to right,#ffc398,#a27250);
+    color:#3c2a1e;
+}
+
+.thead {
+    background-color:#3c2a1e;
+    color:white;;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+.add-food {
+    margin-top: 3%;  
+}
+
+/* .menu-items {
+    margin: 4% 0; 
+    border-bottom: 1px solid black;
+} */
+
+.item-view {
+    margin: auto; 
+    border-bottom: 3px solid black;
+    /* border-left: 3px solid black; */
+    /* background-color: #f1bd9a; */
+}
+
+.details{
+    padding: 10px ;
+    font-size: 30px;
+}
+
+.l-col{
+    background-color:#3c2a1e;
+    color:#ffc398;
+    padding: 5px;
+    border-style: ridge;
+    margin-left:10%;
+}
+
+.buttons{
+    padding : 15px;
+    text-align:center !important;
+}
+
+.r-col{
+    color:#3c2a1e;
+    background-color:#ffc398;
+    padding: 5px;
+    border-style: ridge;
+    margin-left:0;
+}
+
+.col-s-1{
+    margin-top: 2%;
+}
+
+.v-nv{
+    width:33px;
+    height:33px;
+}
+
+.col-s-2{
+    margin-left: 5%;
+}
+
+.food-name{
+    font-size: 25px;
+}
+
+.food-price{
+    font-size: 20px;
+}
+
+.food-serves{
+    font-size: 15px;
+}
+
+.food-description{
+    font-size: 15px;
+}
+
+.categ{
+    border-bottom: 5px solid black;
+    font-size: 35px;
+    margin-left: 5.5%;
+}
+
+.col-s-3{
+    margin-left:auto;
+    font-size: 16px;
+}
+
+.menuImages {
+    width: 100%;
+    height: 220px;
+    box-shadow:5px 5px 10px gray;  
+    border-radius: 2%;
+    margin-bottom: 5px;
+}
+
+.list-group-item{
+    margin: 10px 0;
+}
+
+.item-details{
+    margin-top: 5px; 
+}
+
+.footer{
+    height: 10vh;
+    margin: 0;
+}
+
+.loginform{
+    padding: 5%;
+    background-color: white;
+    border: 1px solid lightgray; 
+    border-radius: 3%;
+
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.login {
+    margin: 6% 0;
+}
+
+.loginhead img{
+    height: 120px;
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.loginhead{
+    margin: 6% 0;
+    text-align: center;
+}
+
+#register {
+    margin: 5% 0;
+}
+
+.admin-sidebar {
+    background-color: #1b023a;
+    height: 90vh;
+    position: fixed;
+    top: 12%;
+    left: 0;
+}
+
+.sidelink {
+    height: 15%;
+    display: block;
+    text-align: center;
+    margin-top: 25%;
+    text-decoration: none;
+    color: white;
+}
+
+.sidelink:hover {
+    color :#90ebe6;
+}
+
+#welcomeadmin{
+    color: white;
+    text-align: center;
+    margin: 5% 0;
+    font-size: 22px;
+    border-bottom: 1px solid antiquewhite;
+}
+
+.form-control {
+    height: 33px;
+}
+
+.view{
+    margin-top: 3%;  
+}
+
+.table {
+    font-size: 14px;
+}
+
+.message{
+    padding: 5%;
+    border: 1px solid #489e9a;
+    box-shadow: 5px 5px 10px #489e9a;
+}
+
+.intro, .team, .message, .help{
+    margin-bottom: 90px;
+}
+
+.intro h2, .team h2, .message h2, .help h2 {
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.how, .contact, .location {
+    margin-bottom: 50px;
+}
+
+.card-container:{
+    background-color: transparent;
+}
+
+.card{
+    margin: 5% 2%;
+    transition: all .7s;
+    transform-style: preserve-3d;
+}
+
+.card-container:hover .card{
+    transform: rotateY(-180deg);
+}
+
+.front{
+    background-image: linear-gradient(to right,#a27250,#3c2a1e);
+}
+
+.front, .back{
+    backface-visibility: hidden;
+}
+
+.card img{
+    height: 320px;
+}
+.card-title{
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    margin-left: 5px;
+}
+
+.card {
+    background-color:#ffdcc4;
+    color:#3c2a1e;
+}
+
+.card-header {
+    background-color:#3c2a1e;
+    color:white;
+}
