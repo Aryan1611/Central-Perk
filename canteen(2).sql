@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 11, 2019 at 12:59 PM
+-- Generation Time: Dec 12, 2019 at 02:14 PM
 -- Server version: 5.7.26-0ubuntu0.18.10.1
 -- PHP Version: 7.2.19-0ubuntu0.18.10.1
 
@@ -35,14 +35,6 @@ CREATE TABLE `bill` (
   `quantity` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Dumping data for table `bill`
---
-
-INSERT INTO `bill` (`id`, `food_id`, `cust_id`, `food_name`, `price`, `quantity`) VALUES
-(7, 1, 2, 'Vada Pav', '12', 4),
-(8, 2, 2, 'Samosa', '10', 4);
-
 -- --------------------------------------------------------
 
 --
@@ -64,10 +56,8 @@ CREATE TABLE `customers` (
 --
 
 INSERT INTO `customers` (`id`, `name`, `email`, `password`, `phone`, `address`, `remember_token`) VALUES
-(1, 'a', 'a@a.c', 'qwerty', '9999999998', 'tyuyiljhmngxbzf', NULL),
-(2, 'b', 'b@b.c', 'qwerty', '9999999999', 'jklkhgcjgdsdhzd', NULL),
-(4, 'Moin', 'moin@bakbuck.com', 'moinmoin', '7738545542', 'ayesha mension', NULL),
-(6, 'ubed', 'ubed@example.com', '12345678', '0000000000', 'fgdsfaghhfdgsfbfdshf', NULL);
+(1, 'a', 'a@a.c', 'qwerty', '9999999999', 'dfgyguf', NULL),
+(2, 'b', 'b@b.c', 'qwerty', '9999999998', 'tyhjfd', NULL);
 
 -- --------------------------------------------------------
 
@@ -106,8 +96,40 @@ CREATE TABLE `food` (
 --
 
 INSERT INTO `food` (`id`, `food_name`, `category`, `price`, `quantity`, `description`, `serves`, `contents`) VALUES
-(1, 'Vada Pav', 'Snacks', 12, 70, 'scsvdbfnghkjlfdgsf', '1', 'Veg'),
-(2, 'Samosa', 'Snacks', 10, 72, 'gbhdskoajsifjbvhsad', '1', 'Veg');
+(1, 'Joey\'s Meatball Sub', 'F.R.I.E.N.D.S Special', 99, 96, 'Taste the iconic meatball sub every F.R.I.E.N.D.S fan craves!!', '1 (Obviously! Joey doesn\'t share food!!', 'Non Veg'),
+(2, 'Rachel\'s English Trifle', 'F.R.I.E.N.D.S Special', 399, 100, 'The classic english trifle... without the beef ofcourse!', '6', 'Non Veg'),
+(3, 'The \"Moistmaker\" Sandwich', 'F.R.I.E.N.D.S Special', 69, 99, 'NO ONE SHOULD THROW AWAY THIS SANDWICH!!!', '1', 'Non Veg'),
+(4, 'Little Bakery Cheesecake', 'F.R.I.E.N.D.S Special', 499, 49, 'A stolen Cheesecake tastes the best!', '4', 'Non Veg'),
+(5, 'Monica\'s Lasagna', 'F.R.I.E.N.D.S Special', 199, 99, 'Devour Joey\'s favourite Lasagnas!', '2', 'Non Veg'),
+(6, 'Caffè Americano', 'Beverages', 69, 300, 'Classic Caffè Americano', '1', 'Veg'),
+(7, 'Café Latte', 'Beverages', 69, 300, 'Classic Café Latte', '1', 'Veg'),
+(8, 'Cappuccino', 'Beverages', 69, 296, 'Classic Cappuccino', '1', 'Veg'),
+(9, 'Espresso', 'Beverages', 69, 300, 'Classic Espresso', '1', 'Veg'),
+(10, 'Flat White', 'Beverages', 69, 297, 'Classic Flat White', '1', 'Veg'),
+(11, 'Long Black', 'Beverages', 69, 300, 'Classic Long Black', '1', 'Veg'),
+(12, 'Macchiato', 'Beverages', 69, 300, 'Classic Macchiato', '1', 'Veg'),
+(13, 'Classic Fries', 'Sides', 69, 200, 'The Classic Salted French Fries', '1-2', 'Veg'),
+(14, 'Peri Peri Fries', 'Sides', 89, 200, 'Fries sprinkled with peri peri', '1-2', 'Veg'),
+(15, 'Cheesy Fries', 'Sides', 109, 200, 'Fries topped with creamy cheese sauce', '1-2', 'Veg'),
+(16, 'Cheese Overloaded Fries', 'Sides', 139, 200, 'Fries loaded with grated mozzarella and creamy cheese sauce', '2-3', 'Veg'),
+(17, 'Chipotle Fries', 'Sides', 119, 200, 'Fries topped with tangy chipotle sauce', '1-2', 'Veg'),
+(18, 'BBQ Fries', 'Sides', 119, 200, 'Fries topped with exotic BBQ sauce', '1-2', 'Veg'),
+(19, 'Garlic Bread', 'Sides', 89, 200, 'Classic garlic bread sticks', '1-2', 'Veg'),
+(20, 'Garlic Bread with Cheese', 'Sides', 109, 200, 'The name describes itself ;)', '1-2', 'Veg'),
+(21, 'Simply Veg', 'Pizzas', 149, 200, 'Topped with onions, tomatoes, capsicum and golden corn', '2', 'Veg'),
+(22, 'Plain Cheese', 'Pizzas', 149, 100, 'Pizza loaded with just Cheeeeeeeese', '2', 'Veg'),
+(23, 'Shahi Paneer', 'Pizzas', 169, 100, 'Topped with paneer, onions and tomatoes', '2', 'Veg'),
+(24, 'BBQ Chicken', 'Pizzas', 169, 100, 'Topped with BBQ chicken', '2', 'Non Veg'),
+(25, 'Chicken Overloaded', 'Pizzas', 209, 100, 'Topped with BBQ chicken, Chicken Salami, Chicken Keema and Chicken Sausage', '2', 'Non Veg'),
+(26, 'Mac N Cheese', 'Pastas', 129, 100, 'The Classic Mac N Cheese', '1-2', 'Veg'),
+(27, 'White Alfredo', 'Pastas', 129, 100, 'Alfredo pasta topped with white pasta sauce and various veggies', '1-2', 'Veg'),
+(28, 'Chicken White Alfredo', 'Pastas', 149, 100, 'Alfredo Pasta topped with white pasta sauce with various veggies and grated chicken', '1-2', 'Non Veg'),
+(29, 'Chocolate', 'Shakes', 99, 100, 'Classic chocolate milkshake', '1', 'Veg'),
+(30, 'Butterscotch', 'Shakes', 99, 100, 'Classic butterscotch milkshake', '1', 'Veg'),
+(31, 'Strawberry', 'Shakes', 99, 100, 'Classic strawberry milkshake', '1', 'Veg'),
+(32, 'Oreo', 'Shakes', 99, 100, 'Classic Oreo milkshake', '1', 'Veg'),
+(33, 'Bottled Water (1/2 ltr)', 'Beverages', 20, 400, 'Seriously? Why to describe this?', '1', 'Veg'),
+(34, 'Soft Drinks (1/2 ltr)', 'Beverages', 40, 200, 'Nope. Not describing this either', '1', 'Veg');
 
 -- --------------------------------------------------------
 
@@ -177,19 +199,12 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `order_id`, `food_id`, `cust_id`, `food_name`, `price`, `quantity`, `total`, `status`, `created_at`, `updated_at`) VALUES
-(1, 1, 1, 2, 'Vada Pav', '12', 1, 42, 'Confirm', '2019-10-26 04:41:35', '2019-10-26 07:55:15'),
-(2, 1, 2, 2, 'Samosa', '10', 3, 42, 'pending', '2019-10-26 04:41:35', '2019-10-26 04:41:35'),
-(3, 2, 1, 2, 'Vada Pav', '12', 3, 36, 'Confirm', '2019-10-26 04:44:31', '2019-10-26 07:55:18'),
-(4, 3, 2, 2, 'Samosa', '10', 4, 40, 'pending', '2019-10-26 04:45:23', '2019-10-26 04:45:23'),
-(5, 1, 2, 1, 'Samosa', '10', 1, 10, 'pending', '2019-10-26 04:46:22', '2019-10-26 04:46:22'),
-(6, 4, 2, 2, 'Samosa', '10', 4, 40, 'pending', '2019-10-26 04:47:22', '2019-10-26 04:47:22'),
-(7, 5, 1, 2, 'Vada Pav', '12', 3, 36, 'Confirm', '2019-10-27 04:54:55', '2019-10-27 04:55:57'),
-(8, 1, 1, 4, 'Vada Pav', '12', 2, 24, 'Confirm', '2019-10-27 06:02:44', '2019-10-27 06:04:51'),
-(9, 1, 1, 6, 'Vada Pav', '12', 7, 164, 'Confirm', '2019-11-30 01:19:33', '2019-11-30 01:21:48'),
-(10, 1, 2, 6, 'Samosa', '10', 8, 164, 'Confirm', '2019-11-30 01:19:33', '2019-11-30 01:21:51'),
-(11, 6, 1, 2, 'Vada Pav', '12', 5, 160, 'pending', '2019-12-10 23:30:02', '2019-12-10 23:30:02'),
-(12, 6, 2, 2, 'Samosa', '10', 4, 160, 'pending', '2019-12-10 23:30:02', '2019-12-10 23:30:02'),
-(13, 6, 1, 2, 'Vada Pav', '12', 5, 160, 'pending', '2019-12-10 23:30:03', '2019-12-10 23:30:03');
+(1, 1, 10, 1, 'Flat White', '69', 3, 475, 'pending', '2019-12-12 01:07:35', '2019-12-12 01:07:35'),
+(2, 1, 5, 1, 'Monica\'s Lasagna', '199', 1, 475, 'pending', '2019-12-12 01:07:35', '2019-12-12 01:07:35'),
+(3, 1, 3, 1, 'The \"Moistmaker\" Sandwich', '69', 1, 475, 'pending', '2019-12-12 01:07:35', '2019-12-12 01:07:35'),
+(4, 2, 4, 1, 'Little Bakery Cheesecake', '499', 1, 499, 'pending', '2019-12-12 01:09:17', '2019-12-12 01:09:17'),
+(5, 1, 8, 2, 'Cappuccino', '69', 4, 672, 'pending', '2019-12-12 01:11:28', '2019-12-12 01:11:28'),
+(6, 1, 1, 2, 'Joey\'s Meatball Sub', '99', 4, 672, 'pending', '2019-12-12 01:11:28', '2019-12-12 01:11:28');
 
 -- --------------------------------------------------------
 
@@ -225,8 +240,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'q', 'q@q.c', '2019-10-26 10:07:47', '$2y$10$u9gFdlRirc.SVjg6ts0Sa.Xnf6yhDFpm4SUfHovW7VrKVMn51GFOO', NULL, '2019-10-26 04:37:47', '2019-10-26 04:37:47'),
-(2, 'aryan', 'aryan@example.com', '2019-11-30 06:51:11', '$2y$10$tQ.05QAU6GxRdh9qzyIMD.gzmuTMwDajuTERkkqCzlHpVd1ZIcwIK', NULL, '2019-11-30 01:21:11', '2019-11-30 01:21:11');
+(1, 'aryan', 'aryan@example.com', '2019-12-12 06:21:48', '$2y$10$Vk7Z0TtoKKiJN5qur5uaOeGuTZKNC7Gl5qd13ctEdmV8FmbGyD.mi', NULL, '2019-12-12 00:51:48', '2019-12-12 00:51:48');
 
 --
 -- Indexes for dumped tables
@@ -297,12 +311,12 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `bill`
 --
 ALTER TABLE `bill`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `failed_jobs`
 --
@@ -312,7 +326,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `food`
 --
 ALTER TABLE `food`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 --
 -- AUTO_INCREMENT for table `migrations`
 --
@@ -327,12 +341,12 @@ ALTER TABLE `my_employees`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
