@@ -101,7 +101,7 @@
                             <select class="form-control" id="category" name="category">
                                 <option value="Snacks">Snacks</option>
                                 <option value="Beverages">Beverages</option>
-                                <option value="Breakfast">Breakfast</option>
+                                <option value="F.R.I.E.N.D.S Special">F.R.I.E.N.D.S Special</option>
                                 <option value="Chinese">Chinese</option>
                             </select> 
                             <span class="text-danger"><strong id="category-error"></strong></span>

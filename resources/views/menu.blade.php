@@ -11,9 +11,10 @@
 </div>
 
 <div class="menu-items">
-    <h2  class="categ">Breakfast</h2>
+    <h2  class="categ">F.R.I.E.N.D.S Special</h2>
     @foreach($food as $fi)
-    @if($fi->category=='Breakfast')
+    @if($fi->category=='F.R.I.E.N.D.S Special')
+    
     <form class="form-inline" method='POST' action="menu/{{$fi->id}}"
     onsubmit="return confirm('Confirm Order?')">
     @csrf
@@ -56,9 +57,11 @@
             </div>
         </div>
     </div>
+    </form>
     @endif
     @endforeach
 </div>
+
 
 
 <!-- <div class="container">
@@ -159,6 +162,7 @@
     <h2  class="categ">Chinese</h2>
     @foreach($food as $fi)
     @if($fi->category=='Chinese')
+    
     <form class="form-inline" method='POST' action="menu/{{$fi->id}}"
     onsubmit="return confirm('Confirm Order?')">
     @csrf
@@ -201,14 +205,17 @@
             </div>
         </div>
     </div>
+    </form>
     @endif
     @endforeach
 </div>
+
 
 <div class="menu-items">
     <h2  class="categ">Beverages</h2>
     @foreach($food as $fi)
     @if($fi->category=='Beverages')
+    
     <form class="form-inline" method='POST' action="menu/{{$fi->id}}"
     onsubmit="return confirm('Confirm Order?')">
     @csrf
@@ -251,9 +258,11 @@
             </div>
         </div>
     </div>
+    </form>
     @endif
     @endforeach
 </div>
+
 @endsection
 
    

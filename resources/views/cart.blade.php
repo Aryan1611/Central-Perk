@@ -70,15 +70,10 @@ $sum = 0;
                     </button>
                 </div>
                 <div class="modal-body">
-                <input type='hidden' name='xyz' id='xyz' value=''>
-                <div id='abc'>
-                <span style="display:none;">{{ $qw = session('item') }}</span>
-                </div>
-                <form class="form-inline" method="post" action="cart/{{$qw}}" 
+                <form class="form-inline" method="post" action="cart" 
                     onsubmit="return confirm('Are You Sure You Want to Delete the Food?')">
                     @csrf
-                    @method('DELETE')
-                        <input type="hidden" name="_method" value="delete">
+                        <input type='hidden' name='del_id' id='del_id' value=''>
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         
                         <button type="submit" class="btn btn-danger btn-sm">
@@ -112,15 +107,7 @@ $sum = 0;
 <script>
 $(document).on('click','.open-m', function () {
   var myVal = $(this).data('val');
-//   console.log(myVal);
-  $('.modal-body #xyz').val(myVal);
-  var jsvar=document.getElementById('xyz').value;
-console.log(jsvar);
-document.getElementById('abc').innerHTML="<?php
-$phpvar='"+jsvar+"';
-// echo $phpvar;
-session(['item' => $phpvar]);
-echo session('item'); ?>";
+  $('.modal-body #del_id').val(myVal);
 });
 </script>
 @endsection

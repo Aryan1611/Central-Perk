@@ -41,7 +41,14 @@ class CartController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $del_id=$request->del_id;
+        $cart=Menu::find($del_id);
+        $f=Food::find($cart->food_id);
+        $f->quantity=$f->quantity+$cart->quantity;
+        $f->save();
+        $cart->delete();
+        $request->session()->flash('message','Food Deleted Successfully');
+        return redirect()->back();
     }
 
     /**
@@ -88,13 +95,6 @@ class CartController extends Controller
      */
     public function destroy(Menu $cart,Request $request)
     {
-        $f=Food::find($cart->food_id);
-        // dd($cart);
-        dd(session('item'));
-        $f->quantity=$f->quantity+$cart->quantity;
-        $f->save();
-        $cart->delete();
-        $request->session()->flash('message','Food Deleted Successfully');
-        return redirect()->back();
+        //
     }
 }
