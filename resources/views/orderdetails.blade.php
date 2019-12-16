@@ -10,7 +10,7 @@
 $sum=0;
 ?>
 <div class="container">
-    <div class="card-body">
+    <div class="table-responsive">
         <table class="table table-striped table-bordered table-hover">
             <thead class="thead-dark"> 
                 <tr>

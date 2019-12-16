@@ -6,57 +6,26 @@
     <h1 class="text-center">~Your Profile~</h1>
   </div>
 </div>
-    <!-- <div class="container">
-        <div class="card-header">
-            <tr class="card-title"></tr>
-        </div>
-        <div class="card-body">
-            <table class="table table-striped table-bordered table-hover">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Phone</th>
-                        <th>Address</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>{{ $prof->name }}</td>
-                        <td>{{ $prof->email }}</td>
-                        <td>{{ $prof->phone }}</td>
-                        <td>{{ $prof->address }}</td>
-                        <td>
-                        <a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#profModal" data-action="Edit" data-prof="{{$prof}}">
-                            <i class="fa fa-edit" data-toggle="tooltip"></i>
-                        </a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <a href="{{ route('userlogout') }}" class='btn btn-danger'>Logout</a>
-            <a href="{{ route('order.index') }}" class='btn btn-primary'>View Orders History</a>
-    </div> -->
+    <div class="container">
     <table class="table table-striped table-bordered table-hover">
-    <tbody class='details'>
-    <tr>
-    <td>Name :
-    <td>{{ $prof->name }}</td>
-    </tr>
-    <tr>
-    <td>Email :</td>
-    <td>{{ $prof->email }}</td>
-    </tr>
-    <tr>
-    <td>Phone :</td>
-    <td>{{ $prof->phone }}</td>
-    </tr>
-    <tr>
-    <td>Address :</td>
-    <td>{{ $prof->address }}</td>
-    </tr>
-    </tbody>
+        <tbody class='details'>
+        <tr>
+            <td>Name :
+            <td>{{ $prof->name }}</td>
+            </tr>
+            <tr>
+            <td>Email :</td>
+            <td>{{ $prof->email }}</td>
+            </tr>
+            <tr>
+            <td>Phone :</td>
+            <td>{{ $prof->phone }}</td>
+            </tr>
+            <tr>
+            <td>Address :</td>
+            <td>{{ $prof->address }}</td>
+        </tr>
+        </tbody>
     </table>
     <div class='buttons'>
     <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#profModal" data-action="Edit" data-prof="{{$prof}}">
@@ -65,7 +34,7 @@
     <a href="{{ route('order.index') }}" class='btn btn-primary'>View Orders History</a>
     <a href="{{ route('userlogout') }}" class='btn btn-danger'>Logout</a>
     </div>
-    
+</div>
     <!-- New Food Modal Window -->
     <div class="modal fade" id="profModal" tableindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">

@@ -11,8 +11,8 @@ $sum = 0;
 ?>
 <span style="display:none;">{{ $c = count($cart) }}</span>
 @if($c>0)
-<div class="container">
-    <div class="card-body">
+<div class="container-fluid">
+        <div class="table-responsive">
         <table class="table table-striped table-bordered table-hover">
             <thead class="thead-dark"> 
                 <tr>
@@ -50,11 +50,17 @@ $sum = 0;
                 @endforeach
             </tbody>
         </table>
-        <div>
-        <h2 class="float-right">Grand Total : &#8377;{{ $sum }}/-</h2>
-        <a href="{{ route('menu.index') }}" class="btn btn-primary button1" >Order More</a>
-        <button class="btn btn-success button2" type="submit">Confirm Order</button>
         </div>
+        <div class="row my-4">
+            <div class="col-sm-8 button1">
+                <a href="{{ route('menu.index') }}" class="btn btn-primary my-2" >Order More</a>
+                <button class="btn btn-success btn-sm" type="submit">Confirm Order</button>
+            </div>
+            <div class="col-sm-4 my-2">
+                <h2>Grand Total : &#8377;{{ $sum }}/-</h2>
+            </div>
+        </div>
+    </div>
         </form>
     </div>
 </div>
@@ -85,22 +91,23 @@ $sum = 0;
         </div>
 </div>
 @else
-<h2 style="text-align:center">Nothing ordered yet !</h2>
-<a class='btn btn-primary button' href="{{ route('menu.index') }}">Order Now!</a>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <h2 style="text-align:center">Nothing ordered yet !</h2>
+            <a class='btn btn-primary button' href="{{ route('menu.index') }}">Order Now!</a>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+</div>
 @endif
 <style>
 .button {
-            position : absolute;
-            top : 70%;
-            left : 45%;
+    margin:15% 30%;
 }
 .button1 {
-            position : absolute;
-            left : 40%;
-}
-.button2 {
-            position : absolute;
-            left : 50%;
+    padding-left: 30%;
 }
 </style>
 

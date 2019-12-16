@@ -1,16 +1,7 @@
-/* body{
-    background-image: linear-gradient(to right,#dcf8f3,#90ebe6);
-
-} */
-
 body{
-    background-image: linear-gradient(to right,#ffe1cb,#ffd1b0);
+    background-color: rgb(241, 222, 206);
 
 }
-
-/* .jumbotron {
-    background-image: linear-gradient(to right,#90ebe6,#489e9a);
-} */
 
 .jumbotron {
     background-image: linear-gradient(to right,#ffc398,#a27250);
@@ -30,46 +21,16 @@ h2 {
     margin-top: 3%;  
 }
 
-/* .menu-items {
-    margin: 4% 0; 
-    border-bottom: 1px solid black;
-} */
-
-.item-view {
-    margin: auto; 
-    border-bottom: 3px solid black;
-    /* border-left: 3px solid black; */
-    /* background-color: #f1bd9a; */
-}
-
 .details{
     padding: 10px ;
-    font-size: 30px;
+    font-size: 20px;
 }
-
-.l-col{
-    background-color:#3c2a1e;
-    color:#ffc398;
-    padding: 5px;
-    border-style: ridge;
-    margin-left:10%;
+.item-view{
+    border-bottom:1px solid gray;
 }
-
 .buttons{
     padding : 15px;
     text-align:center !important;
-}
-
-.r-col{
-    color:#3c2a1e;
-    background-color:#ffc398;
-    padding: 5px;
-    border-style: ridge;
-    margin-left:0;
-}
-
-.col-s-1{
-    margin-top: 2%;
 }
 
 .v-nv{
@@ -77,12 +38,8 @@ h2 {
     height:33px;
 }
 
-.col-s-2{
-    margin-left: 5%;
-}
-
 .food-name{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .food-price{
@@ -94,19 +51,17 @@ h2 {
 }
 
 .food-description{
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .categ{
-    border-bottom: 5px solid black;
+    border-bottom: 4px solid black;
     font-size: 35px;
-    margin-left: 5.5%;
+    text-align: center;
+    margin: 5% 5% 0;
+    text-transform: uppercase;
 }
 
-.col-s-3{
-    margin-left:auto;
-    font-size: 16px;
-}
 
 .menuImages {
     width: 100%;
@@ -205,8 +160,8 @@ label {
 
 .message{
     padding: 5%;
-    border: 1px solid #489e9a;
-    box-shadow: 5px 5px 10px #489e9a;
+    border: 1px solid #3c2a1e;
+    box-shadow: 5px 5px 10px #3c2a1e;
 }
 
 .intro, .team, .message, .help{
@@ -222,17 +177,17 @@ label {
     margin-bottom: 50px;
 }
 
-.card-container:{
+.card-container{
     background-color: transparent;
 }
 
-.card{
-    margin: 5% 2%;
+.card-img-top{
+    margin: 2% 0;
     transition: all .7s;
     transform-style: preserve-3d;
 }
 
-.card-container:hover .card{
+.card-container:hover .card-img-top{
     transform: rotateY(-180deg);
 }
 

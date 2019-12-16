@@ -23,14 +23,14 @@
     <div class="ui item item-view container">
         <div class="content card-body">
             <div class="row">
-                <div class="col-s-1">
+                <div class="col-sm-1">
                     @if($fi->contents=='Veg')
                     <img src="https://img.icons8.com/color/48/000000/vegetarian-food-symbol.png" class="v-nv">
                     @else
                     <img src="https://img.icons8.com/color/48/000000/non-vegetarian-food-symbol.png" style="width:25px;height:25px;">
                     @endif               
                 </div>
-                <div class="col-s-2">
+                <div class="col-sm-8">
                     <div class="food-name">
                     {{$fi->food_name}}
                     </div>
@@ -45,12 +45,12 @@
                     </div>
                 </div>
                 @if($fi->quantity>0)
-                <div class="col-s-3 float-right">
+                <div class="col-sm-3 float-right">
                     <input type="number" name="quantity" min="1" max="{{ $fi->quantity }}" value='1'>
-                    <button class="btn btn-success " type="submit">Order</button>
+                    <button class="btn btn-success btn-sm " type="submit">Order</button>
                 </div>
                 @else
-                <div class="col-s-3 float-right">
+                <div class="col-sm-3 float-right">
                 Out Of Stock!!
                 </div>
                 @endif
@@ -77,14 +77,14 @@
     <div class="ui item item-view container">
         <div class="content card-body">
             <div class="row">
-                <div class="col-s-1">
+                <div class="col-sm-1">
                     @if($fi->contents=='Veg')
                     <img src="https://img.icons8.com/color/48/000000/vegetarian-food-symbol.png" class="v-nv">
                     @else
                     <img src="https://img.icons8.com/color/48/000000/non-vegetarian-food-symbol.png" style="width:25px;height:25px;">
                     @endif               
                 </div>
-                <div class="col-s-2">
+                <div class="col-sm-8">
                     <div class="food-name">
                     {{$fi->food_name}}
                     </div>
@@ -99,12 +99,12 @@
                     </div>
                 </div>
                 @if($fi->quantity>0)
-                <div class="col-s-3 float-right">
+                <div class="col-sm-3 float-right">
                     <input type="number" name="quantity" min="1" max="{{ $fi->quantity }}" value='1'>
                     <button class="btn btn-success " type="submit">Order</button>
                 </div>
                 @else
-                <div class="col-s-3 float-right">
+                <div class="col-sm-3 float-right">
                 Out Of Stock!!
                 </div>
                 @endif
@@ -130,14 +130,14 @@
     <div class="ui item item-view container">
         <div class="content card-body">
             <div class="row">
-                <div class="col-s-1">
+                <div class="col-sm-1">
                     @if($fi->contents=='Veg')
                     <img src="https://img.icons8.com/color/48/000000/vegetarian-food-symbol.png" class="v-nv">
                     @else
                     <img src="https://img.icons8.com/color/48/000000/non-vegetarian-food-symbol.png" style="width:25px;height:25px;">
                     @endif               
                 </div>
-                <div class="col-s-2">
+                <div class="col-sm-8">
                     <div class="food-name">
                     {{$fi->food_name}}
                     </div>
@@ -152,12 +152,12 @@
                     </div>
                 </div>
                 @if($fi->quantity>0)
-                <div class="col-s-3 float-right">
+                <div class="col-sm-3 float-right">
                     <input type="number" name="quantity" min="1" max="{{ $fi->quantity }}" value='1'>
                     <button class="btn btn-success " type="submit">Order</button>
                 </div>
                 @else
-                <div class="col-s-3 float-right">
+                <div class="col-sm-3 float-right">
                 Out Of Stock!!
                 </div>
                 @endif
@@ -183,14 +183,14 @@
     <div class="ui item item-view container">
         <div class="content card-body">
             <div class="row">
-                <div class="col-s-1">
+                <div class="col-sm-1">
                     @if($fi->contents=='Veg')
                     <img src="https://img.icons8.com/color/48/000000/vegetarian-food-symbol.png" class="v-nv">
                     @else
                     <img src="https://img.icons8.com/color/48/000000/non-vegetarian-food-symbol.png" style="width:25px;height:25px;">
                     @endif               
                 </div>
-                <div class="col-s-2">
+                <div class="col-sm-8">
                     <div class="food-name">
                     {{$fi->food_name}}
                     </div>
@@ -205,12 +205,12 @@
                     </div>
                 </div>
                 @if($fi->quantity>0)
-                <div class="col-s-3 float-right">
+                <div class="col-sm-3 float-right">
                     <input type="number" name="quantity" min="1" max="{{ $fi->quantity }}" value='1'>
                     <button class="btn btn-success " type="submit">Order</button>
                 </div>
                 @else
-                <div class="col-s-3 float-right">
+                <div class="col-sm-3 float-right">
                 Out Of Stock!!
                 </div>
                 @endif
@@ -236,14 +236,14 @@
     <div class="ui item item-view container">
         <div class="content card-body">
             <div class="row">
-                <div class="col-s-1">
+                <div class="col-sm-1">
                     @if($fi->contents=='Veg')
                     <img src="https://img.icons8.com/color/48/000000/vegetarian-food-symbol.png" class="v-nv">
                     @else
                     <img src="https://img.icons8.com/color/48/000000/non-vegetarian-food-symbol.png" style="width:25px;height:25px;">
                     @endif               
                 </div>
-                <div class="col-s-2">
+                <div class="col-sm-8">
                     <div class="food-name">
                     {{$fi->food_name}}
                     </div>
@@ -258,12 +258,12 @@
                     </div>
                 </div>
                 @if($fi->quantity>0)
-                <div class="col-s-3 float-right">
+                <div class="col-sm-3 float-right">
                     <input type="number" name="quantity" min="1" max="{{ $fi->quantity }}" value='1'>
                     <button class="btn btn-success " type="submit">Order</button>
                 </div>
                 @else
-                <div class="col-s-3 float-right">
+                <div class="col-sm-3 float-right">
                 Out Of Stock!!
                 </div>
                 @endif
@@ -289,14 +289,14 @@
     <div class="ui item item-view container">
         <div class="content card-body">
             <div class="row">
-                <div class="col-s-1">
+                <div class="col-sm-1">
                     @if($fi->contents=='Veg')
                     <img src="https://img.icons8.com/color/48/000000/vegetarian-food-symbol.png" class="v-nv">
                     @else
                     <img src="https://img.icons8.com/color/48/000000/non-vegetarian-food-symbol.png" style="width:25px;height:25px;">
                     @endif               
                 </div>
-                <div class="col-s-2">
+                <div class="col-sm-8">
                     <div class="food-name">
                     {{$fi->food_name}}
                     </div>
@@ -311,12 +311,12 @@
                     </div>
                 </div>
                 @if($fi->quantity>0)
-                <div class="col-s-3 float-right">
+                <div class="col-sm-3 float-right">
                     <input type="number" name="quantity" min="1" max="{{ $fi->quantity }}" value='1'>
                     <button class="btn btn-success " type="submit">Order</button>
                 </div>
                 @else
-                <div class="col-s-3 float-right">
+                <div class="col-sm-3 float-right">
                 Out Of Stock!!
                 </div>
                 @endif

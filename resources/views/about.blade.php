@@ -46,7 +46,7 @@
             <div class="col-md-4 card-container">
                 <div class="card">
                 <div class='front'>
-                    
+                        
                 </div>
                 <div class='back'>
                     <img src="img/obaid.jpg" class="card-img-top" alt="Obaid Shaikh">

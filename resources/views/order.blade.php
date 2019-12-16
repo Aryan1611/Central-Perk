@@ -22,11 +22,11 @@ $x=0;
     <div class="ui item item-view container">
         <div class="content card-body">
             <div class="row">
-                <div class="col-s-1">
+                <div class="col-sm-1">
                     Order:{{$oi->order_id}}             
                 </div>
-                <div class="col-s-3">
-                <button class="btn btn-primary " type="submit">View Details</button>
+                <div class="col-sm-3">
+                <button class="btn btn-primary" type="submit">View Details</button>
                 </div>
             </div>
         </div>
@@ -38,7 +38,20 @@ $x=0;
     @endforeach
 </div>
 @else
-<h2 style="text-align:center">Nothing ordered yet !</h2>
-<a class='btn btn-primary button' href="{{ route('menu.index') }}">Order Now!</a>
+<div class="container">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <h2 style="text-align:center">Nothing ordered yet !</h2>
+                <a class='btn btn-primary button' href="{{ route('menu.index') }}">Order Now!</a>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
 @endif
+<style>
+        .button {
+            margin:15% 30%;
+        }
+</style>
 @endsection
